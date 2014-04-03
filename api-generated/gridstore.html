@@ -7,7 +7,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>GridStore() &mdash; MongoDB Node.JS Driver 1.3.20 documentation</title>
+    <title>GridStore() &mdash; MongoDB Node.JS Driver 1.4.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/mongodb-docs.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -15,7 +15,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '1.3.20',
+        VERSION:     '1.4.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,7 +24,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="MongoDB Node.JS Driver 1.3.20 documentation" href="../index.html" />
+    <link rel="top" title="MongoDB Node.JS Driver 1.4.0 documentation" href="../index.html" />
     <link rel="next" title="ReadStream()" href="readstream.html" />
     <link rel="prev" title="Grid()" href="grid.html" /> 
   </head>
@@ -37,7 +37,7 @@
           <li><p><a href="../index.html"><img class="logo" src="../_static/logo-mongodb.png" alt="Logo"/></p></li>
         <li class="right">| <a href="https://github.com/mongodb/node-mongodb-native/" title="Fork the driver on GitHub to contribute.">GitHub</a></li>
         <li class="right"><a href="http://jira.mongodb.org/browse/NODE" title="Open a case in Jira to report a problem with the documentation.">Jira</a></li>
-        <li><a href="../contents.html">MongoDB Node.JS Driver 1.3.20 documentation</a> (<a href="../genindex.html">index</a>)  &raquo;</li> 
+        <li><a href="../contents.html">MongoDB Node.JS Driver 1.4.0 documentation</a> (<a href="../genindex.html">index</a>)  &raquo;</li> 
       </ul>
     </div>  
 
@@ -93,8 +93,8 @@
 <li><strong>readPreference</strong> {String}, the prefered read preference (ReadPreference.PRIMARY, ReadPreference.PRIMARY_PREFERRED, ReadPreference.SECONDARY, ReadPreference.SECONDARY_PREFERRED, ReadPreference.NEAREST).</li>
 <li><strong>w</strong>, {Number/String, &gt; -1 || &#8216;majority&#8217; || tag name} the write concern for the operation where &lt; 1 is no acknowlegement of write and w &gt;= 1, w = &#8216;majority&#8217; or tag acknowledges the write</li>
 <li><strong>wtimeout</strong>, {Number, 0} set the timeout for waiting for write concern to finish (combines with w option)</li>
-<li><strong>fsync</strong>, (Boolean, default:false) write waits for fsync before returning</li>
-<li><strong>journal</strong>, (Boolean, default:false) write waits for journal sync before returning</li>
+<li><strong>fsync</strong>, (Boolean, default:false) write waits for fsync before returning, from MongoDB 2.6 on, fsync cannot be combined with journal</li>
+<li><strong>j</strong>, (Boolean, default:false) write waits for journal sync before returning</li>
 </ul>
 </dd>
 </dl>
@@ -2274,7 +2274,7 @@ the given string does not have one.</p>
       <ul>
         <li class="right">| <a href="https://github.com/mongodb/node-mongodb-native/" title="Fork the driver on GitHub to contribute.">GitHub</a></li>
         <li class="right"><a href="http://jira.mongodb.org/browse/NODE" title="Open a case in Jira to report a problem with the documentation.">Jira</a></li>
-        <li><a href="../contents.html">MongoDB Node.JS Driver 1.3.20 documentation</a> (<a href="../genindex.html">index</a>)  &raquo;</li> 
+        <li><a href="../contents.html">MongoDB Node.JS Driver 1.4.0 documentation</a> (<a href="../genindex.html">index</a>)  &raquo;</li> 
       </ul>
     </div></div>
     <div class="footer">

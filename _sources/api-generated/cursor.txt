@@ -713,7 +713,7 @@ stream
 ------
 
 
-Returns a Node ReadStream interface for this cursor.
+Returns a Node Transform Stream interface for this cursor.
 
 
 
